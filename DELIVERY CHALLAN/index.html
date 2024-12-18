@@ -1,0 +1,391 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>DELIVERY CHALLAN</title>
+    <style>
+        body {
+            font-family: Calibri;
+            font-size: 12px;
+            line-height: 13px;
+            color: #000000;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Calibri;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 16px;
+            color: black;
+        }
+
+        .m3 {
+            margin-left: 5px;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #000;
+            text-align: center;
+            font-size: 10px;
+            height: 19px;
+            padding-left: 2px;
+        }
+
+        .clallan {
+            display: flex;
+            margin-bottom: 8px;
+            justify-content: center;
+            margin-top: -6px;
+        }
+
+        .center {
+            text-align: center !important;
+
+        }
+
+        .left {
+            text-align: left !important;
+        }
+
+        .right {
+            text-align: right !important;
+        }
+
+        .no-border {
+            border: none !important;
+        }
+
+        .table tbody th {
+            padding-left: 5px;
+            font-size: 10px;
+            text-align: left !important;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+
+        .m1 {
+            margin-right: 57px;
+        }
+
+        .m2 {
+            margin-right: 100px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 19px;
+            margin: 2px;
+            height: 15px;
+            margin-top: -2px;
+        }
+
+        .finis {
+            background-color: #222222;
+            color: #ffffff;
+            padding: 5px 6px;
+            font-size: 16px;
+            margin-left: 60px;
+        }
+
+        .pad-head {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h6 {
+            font-size: 11px;
+        }
+
+        h5 {
+            font-size: 12px;
+            margin-top: 3px;
+        }
+
+        .header-challan {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        .Receipt {
+            margin-top: 12px;
+            padding-bottom: 2px;
+            font-weight: bold;
+            font-size: 10px;
+        }
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                border: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="logo">
+            <div class="header-challan">
+                <img src="https://devapi.jerpbd.com/sbu/sbu_logo/jsmdl_logo.png" alt="" style="height:50px;">
+                <div class="pad-head">
+                    <div>
+                        <h2 style="font-size:30px; margin-bottom:10px;">JMI Syringes &amp; Medical Devices Ltd.</h2>
+                        <p style="font-size:12px;font-weight: 600">A Joint Venture Enterprise with Japan & South Korea
+                        </p>
+                    </div>
+                    <p style="font-size:10px;"><strong>Corporate Office:</strong> Unique Heights(Level-11),117,Kazi
+                        Nazrul Islam Avenue,
+                        Ramna,Dhaka-1217,Tel : +880-2-55138723-24</p>
+                    <p style="font-size:10px;"><strong>Registered Office:</strong> GA-72/C,Progoti Shoroni,Middle
+                        Badda,Dhaka-1212,Tel:
+                        +880-2-48811817</p>
+                    <p style="font-size:10px;">
+                        <strong>Factory:</strong> Noapara,Chauddagram,Cumilla,Bangladesh
+                    </p>
+                    <p style="font-size:10px;">Website: www.jmisyringe.com</p>
+                </div>
+                <div></div>
+            </div>
+            <div class="clallan">
+                <h3 class="finis">DELIVERY CHALLAN</h3>
+            </div>
+        </div>
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th rowspan="4" style="padding: 5px; width: 40%;">
+                        <h4 style="font-size: 15px;">To:</h4>
+                        <h5>Customer Name: Drug International Ltd.</h5>
+                        <h5>Address: 17, Green Road, Dhanmondi, Dhaka- 1205</h5>
+                        <h5>BIN No: 000000115-0005</h5>
+                    </th>
+                    <th style="width: 20%;">Driver Name: <span> HASAN ALI</span></th>
+                    <th style="width: 20%;">VAT Challan No.: <span>3456</span> </th>
+                    <th style="width: 20%;">Challan No.: <span>DRG-98/24</span></th>
+                </tr>
+                <tr>
+
+                    <th>Driver Mobile: 01865787878</th>
+                    <th> VAT Date: 12-12-2024</th>
+                    <th>Challan Date: 7 Oct 24</th>
+
+                </tr>
+                <tr>
+                    <th>Transport Name: Mini Truck</th>
+                    <th>VAT Amount: 132211.67</th>
+                    <th>PO No.: 36363673</th>
+                </tr>
+                <tr>
+                    <th>Transport No.: v-245444</th>
+                    <th>Scroll No.: 231231</th>
+                    <th>PO Date: 12 Oct 2024</th>
+
+                </tr>
+            </tbody>
+        </table>
+        <p class="Receipt">Please Acknowledge
+            Receipt of the Following</p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width: 2%">SL</th>
+                    <th style="width: 42%">Product Name</th>
+                    <th style="width: 8%">Batch No.</th>
+                    <th style="width: 7%">MFG. Date</th>
+                    <th style="width: 8%">EXP. Date</th>
+                    <th style="width: 7%">No. of Carton(MC)</th>
+                    <th style="width: 8%">No. of Box(IC)</th>
+                    <th style="width: 7%">No. of Pcs(Loose)</th>
+                    <th style="width: 10%">Quantity of Pcs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="left ">09040-3 ML Disposable Syringe - O, Drug International Ltd. (1s; 1
+                        X 1s)</td>
+                    <td>601021249</td>
+                    <td>Oct 21</td>
+                    <td>Sep 26</td>
+                    <td>60</td>
+                    <td>1</td>
+                    <td>500</td>
+                    <td class="right">121,500</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">2</td>
+                    <td class="left " style="border-bottom:2px dotted #abb8c9;"><strong>930098-Combi-29</strong>
+                        <p style="margin-top: -5px;">
+                            containing items:
+                        </p>
+                    </td>
+
+                    <td>601021249</td>
+                    <td>Oct 21</td>
+                    <td>Sep 26</td>
+                    <td>55</td>
+                    <td>1</td>
+                    <td>200</td>
+                    <td class="right">55,700</td>
+                </tr>
+                <tr>
+                    <td class="left" style="border-bottom:2px dotted #abb8c9;">
+                        <ul>
+                            <li>1. 10ml Disposable Syringe</li>
+                        </ul>
+                    </td>
+                    <td>601021249</td>
+                    <td>Oct 21</td>
+                    <td>Sep 26</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="right"></td>
+                </tr>
+                <tr>
+                    <td class="left" style="border-bottom:2px dotted #abb8c9;">
+                        <ul>
+                            <li>2. SVS 23G PP</li>
+                        </ul>
+                    </td>
+                    <td>601021249</td>
+                    <td>Oct 21</td>
+                    <td>Sep 26</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="right"></td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        <ul>
+                            <li>3. Firstaid Bandage Pad</li>
+                        </ul>
+                    </td>
+                    <td>601021249</td>
+                    <td>Oct 21</td>
+                    <td>Sep 26</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="right"></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">3</td>
+                    <td rowspan="2" class="left">09045-5 ML Disposable Syringe - O,
+                        Drug International Ltd. (1s; 1
+                        X 1s)</td>
+                    <td>601021249</td>
+                    <td>Oct 21</td>
+                    <td>Sep 26</td>
+                    <td>60</td>
+                    <td>1</td>
+                    <td>500</td>
+                    <td class="right">121,500</td>
+                </tr>
+                <tr>
+                    <td>601021249</td>
+                    <td>Oct 21</td>
+                    <td>Sep 26</td>
+                    <td>60</td>
+                    <td>1</td>
+                    <td>500</td>
+                    <td class="right">121,500</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="right" style="padding-right: 6px;"><b>Sub Total</b></td>
+                    <td><b>120</b></td>
+                    <td><b>2</b></td>
+                    <td><b>1000</b></td>
+                    <td class="right"><b>243,000</b></td>
+                </tr>
+                <tr>
+                    <td rowspan="4">4</td>
+                    <td rowspan="3" class="left">09045-5 ML Disposable Syringe - O,
+                        Drug International Ltd. (1s; 1
+                        X 1s)</td>
+                    <td>601021249</td>
+                    <td>Oct 21</td>
+                    <td>Sep 26</td>
+                    <td>60</td>
+                    <td>1</td>
+                    <td>500</td>
+                    <td class="right">121,500</td>
+                </tr>
+                <tr>
+                    <td>601021249</td>
+                    <td>Oct 21</td>
+                    <td>Sep 26</td>
+                    <td>60</td>
+                    <td>1</td>
+                    <td>500</td>
+                    <td class="right">121,500</td>
+                </tr>
+                <tr>
+                    <td>601021249</td>
+                    <td>Oct 21</td>
+                    <td>Sep 26</td>
+                    <td>55</td>
+                    <td>1</td>
+                    <td>200</td>
+                    <td class="right">55,700</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="right" style="padding-right: 6px;"><b>Sub Total</b></td>
+                    <td><b>175</b></td>
+                    <td><b>3</b></td>
+                    <td><b>1200</b></td>
+                    <td class="right"><b>298,700</b></td>
+                <tr>
+                    <td colspan="9" class="no-border">
+                        <div
+                            style="display: flex;align-items: flex-start;justify-content: space-between; margin: 70px 0 60px;">
+                            <div style="width: 15%;text-align: center;">
+                                <h6 style="font-size: 12px;border-top: 1px solid #000;">Prepared by</h6>
+
+                            </div>
+                            <div style="width: 15%;text-align: center;">
+                                <h6 style="font-size: 12px;border-top: 1px solid #000;">Authorized by</h6>
+
+                            </div>
+                            <div style="width: 15%;text-align: center;">
+                                <h6 style="font-size: 12px;border-top: 1px solid #000;">Receiver's Signature</h6>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>REF No.: SOP/WH/003/F01, Version: 05
+        </p>
+
+</body>
+
+</html>
